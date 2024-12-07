@@ -1,8 +1,8 @@
 'use client';
 
-import Body from './components/Body';
+import Body from '../components/Body';
 
-export default function Home() {
+export default function Bio() {
     const bodyContent = Body("BIO"); 
     
     return (
