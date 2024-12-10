@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 export default function Homepage() {
     return (
@@ -41,11 +42,9 @@ export default function Homepage() {
           </div>
           <div style={{ flex: 1, textAlign: 'right' }}>
             <button 
-              style={{ padding: '10px 25px', backgroundColor: '#28a745', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer', fontSize: '14px', transition: 'background-color 0.3s' }} 
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#218838'} 
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#28a745'}
+              style={{ padding: '10px 25px', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer', fontSize: '14px', transition: 'background-color 0.3s' }} 
             >
-              Connect Wallet
+              <ConnectButton />
             </button>
           </div>
         </nav>
